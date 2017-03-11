@@ -1,0 +1,67 @@
+
+.testBox{
+  border: 1px solid black;
+}
+
+
+/* This is the index.html Style Sheet css */
+
+
+/**/
+body{
+font-family: Ubunto;
+}
+
+.headBar{
+  border-bottom: 2px solid rgb(61, 205, 245);
+}
+
+#logo{
+  position: absolute;
+
+}
+div ul#dateTime, li, span{
+  margin-right: 10px;
+  margin-right: 15px;
+  color: white;
+  list-style-type: none;
+
+
+}
+
+#dateTxt{
+  margin-top: 0px;
+  margin-right: 25px;
+  font-size: 30px;
+
+}
+
+#timeTxt{
+  margin-top: 10px;
+  margin-right: 15px;
+  font-size: 45px;
+
+}
+
+#test{
+  width: 1000px;
+  height: 1000px;
+
+}
+
+.bodyBackgorundColor {
+  background-color: rgb(33, 49, 54);
+}
+
+.authorPicture {
+}
+
+/* This is the form.html Style sheet  css */
+.footer {
+  color: white;
+}
+
+
+.form {
+
+}
