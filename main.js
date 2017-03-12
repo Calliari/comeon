@@ -21,7 +21,7 @@ $(document).ready(function() {
     m = checkTime(m);
     s = checkTime(s);
     document.getElementById('dateTxt').innerHTML =
-    days[d] + '  ' + md + ' / ' + y;
+    days[d] + '  ' + md + '  ' + y;
     document.getElementById('timeTxt').innerHTML =
     h + ' : ' + m + ' : ' + s;
     var t = setTimeout(startTime, 500);
