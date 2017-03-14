@@ -13,6 +13,26 @@
   <script src="main.js" charset="utf-8"></script>
   <link rel="stylesheet" href="main.css">
 
+  <script>
+  window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));
+
+</script>
+
 
   <title>Sparta Hackathon</title>
 </head>
@@ -33,55 +53,89 @@
 
 
   <section class="container">
-    <!-- box left side of the screen  -->
-        <div class="col-md-2" >
-          <div class="thumbnail">
-            <img src="pic.jpg" alt="..." width="100" height="100">
-            <div class="caption">
-              <h3>Author</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and
 
-              </p>
-            </div>
-          </div>
-        </div>
-
-    <!-- box center -->
-
-
-        <div class="col-md-7">
-          <!-- Hot to link or embed instagram to a webpage  -->
-          <!-- http://www.instush.com/embed -->
-          <iframe id="test" src="https://users.instush.com/mini-slide-show/?user_id=4789622902&username=salthespartan&sid=-1&susername=-1&tag=-1&stype=mine&t=999999PoxXLgd88UbhwFPF_wDeIOEIzEIdNQ2ibgeQHSwFxDdBCSkR2KwVwcypY5rT7TnCC-53sJqZ98I" allowtransparency="true" frameborder="0" scrolling="no"  style="display:block;width:306px;height:306px;border:none;overflow:visiblemar;margin:auto;" ></iframe>
-
-        </div>
-
-      <!-- box right side of the screen  -->
-      <div class="col-md-3">
-        <div class="thumbnail">
-          <div class="caption">
-            <h3>Sparta level</h3>
+<!-- box left side of the screen 9 blocks -->
+    <section class="thumbnail col-md-8">
+      <h2 class="text-center"><u>Lastest Spartan Projects</u></h2>
+        <div class="col-md-4 center-block">
+          <div class="thumbnail caption">
+            <img src="pic.jpg" class="img-responsive" alt="Responsive image" width="80px" height="80px">
+            <h3><u>Author</u></h3>
             <p>Lorem Ipsum is simply dummy text of the printing and
             </p>
-            <h3>Description</h3>
-              <p>printer took a galley of type and scrambled it to make a
-              type specimen book. It has survived not only five centuries,
-               but also the leap into electronic typesetting, remaining
-               essentially unchanged. It was popularised in the 1960s with
-              </p>
+          </div>
+          <div class="thumbnail caption">
+            <h3><u>Project Details</u></h3>
+            <p>Lorem Ipsum is simply dummy text of the printing
+              andLorem Ipsum is simply dummy text of the printing
+            </p>
           </div>
         </div>
-      </div>
+
+        <div class="thumbnail col-md-8">
+            <img src="project.png" class="img-responsive" alt="Responsive image" width="580px" height="580px">
+        </div>
+
+        <div class="thumbnail caption">
+          <h3><u>Sparta Level</u></h3>
+          <p>Lorem Ipsum is simply dummy text of the printing
+            andLorem Ipsum is simply dummy text of the printing
+          </p>
+        </div>
+
+      </section>
+        <!-- ./ END box left side of the screen 9 blocks -->
+
+      <!-- box right side of the screen 4 blocks -->
+      <section class="col-md-4">
+        <div class="thumbnail">
+          <div class="caption">
+            <h3><u>Twitter Feed</u></h3>
+            <a class="twitter-timeline" href="https://twitter.com/SalsTechTweets">Tweets by SalsTechTweets</a>
+             <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+        </div>
+        <div class="thumbnail">
+          <div class="caption">
+            <h3><u>Instagram</u></h3>
+            <iframe id="test" src="https://users.instush.com/mini-slide-show/?user_id=4789622902&username=salthespartan&sid=-1&susername=-1&tag=-1&stype=mine&t=999999PoxXLgd88UbhwFPF_wDeIOEIzEIdNQ2ibgeQHSwFxDdBCSkR2KwVwcypY5rT7TnCC-53sJqZ98I" allowtransparency="true" frameborder="0" scrolling="no"  style="display:block;width:306px;height:306px;border:none;overflow:visiblemar;margin:auto;" >
+            </iframe>
+          </div>
+        </div>
+      </section>
 
   </section>
   <!-- ./ END between head and footer-->
 
-  <footer class="footer text-center bodyBackgorundColor">
-    <div class="container">
-      <hr>
-    </div>
-    <p><small><small>© 2014 SPARTA GLOBAL™</small></small></p>
+<!-- waether section  https://blog.darksky.net/forecast-embeds/-->
+<!-- http://www.dummies.com/web-design-development/site-development/how-to-embed-the-weather-forecast-in-your-website/ -->
+<section class="weather">
+  <!-- <div class="col-md-8">
+    <iframe id="forecast_embed" type="text/html" frameborder="0" height="210px" width="50%" background-color="#00aaff" color="white"
+    src="http://forecast.io/embed/#lat=51.494410&lon=-0.094757&name= London&color=#00aaff&font=Georgia&units=uk">
+    </iframe>
+  </div> -->
+
+</section>
+<!--./ END waether section  -->
+
+
+
+  <footer class="footer bodyBackgorundColor">
+  <!-- https://www.yourweather.co.uk/widget/ -->
+  <div class="caption">
+    <h3 class=" test-center">Weather London</h3>
+      <div id="cont_ac19088203d4dab61273cb561b63c9a9" class="col-md-5">
+        <script type="text/javascript" async src="https://www.yourweather.co.uk/wid_loader/ac19088203d4dab61273cb561b63c9a9">
+        </script>
+      </div>
+  </div>
+
+      <hr class="container">
+    <p class="text-center"><small><small>© 2014 SPARTA GLOBAL™</small></small></p>
   </footer>
 
+  <!-- twitter embed -->
+  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
   </body>
 </html>
